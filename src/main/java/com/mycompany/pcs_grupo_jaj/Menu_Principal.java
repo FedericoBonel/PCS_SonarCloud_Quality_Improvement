@@ -398,8 +398,8 @@ public class Menu_Principal extends javax.swing.JFrame {
                         stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En cola' WHERE t_estado='Sin Asignar' ORDER BY t_orden ASC LIMIT 1");
                         rk = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_estado='Libre' ORDER BY c_cola_de_trabajo DESC LIMIT 1");
                         if (rk.next()) {
-                            int ccapacidad = rk.getInt(2);
-                            int ccola = rk.getInt("c_cola_de_trabajo");
+                            double ccapacidad = rk.getDouble(2);
+                            double ccola = rk.getDouble("c_cola_de_trabajo");
                             int ctrabajos = rk.getInt("c_cant_trabajos_cola");
                             String centro = rk.getString("c_nombre_centro");
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_centro_asignado='" + centro + "' WHERE t_centro_asignado='vacio' ORDER BY t_orden ASC LIMIT 1");
