@@ -5,26 +5,74 @@
  */
 package com.mycompany.pcs_grupo_jaj;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 
 /**
  * Clase para realizar la simulación
+ *
  * @author A Miralles, J Munoz, J Pereiro
  * @version 1.0
  */
 public class Simulacion extends javax.swing.JFrame {
 
     Connection conn = null;
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField jTextField1;
 
     /**
      * Constructor Simulacion
      */
     public Simulacion() {
         initComponents();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Simulacion().setVisible(true);
+            }
+        });
     }
 
     /**
@@ -71,35 +119,35 @@ public class Simulacion extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 26, Short.MAX_VALUE))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addContainerGap())
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(18, 18, 18)
+                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 26, Short.MAX_VALUE))))
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(72, 72, 72)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(75, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(72, 72, 72)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         pack();
@@ -114,131 +162,139 @@ public class Simulacion extends javax.swing.JFrame {
 
         // Capturamos los datos de Entrada
         segundos = Integer.parseInt(this.jTextField1.getText());
-        
+
         simular(segundos);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * Metodo que realiza la simulación
+     *
      * @param segundos segundos a simular
      */
-    private void simular(int segundos){
-        try //modificar el trabajo de la BBDD
-        {
-            int resultado;
-            int cant_op;
-            int cap_op;
-            double segrest;
+    private void simular(int segundos) {
+        int resultado;
+        int cant_op;
+        int cap_op;
+        double segrest;
+        ResultSet re = null, rs = null, rx = null, rc = null, ry = null, ro = null, rj = null, ra = null;
+        try {
             conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb", "admin", "cencentros1");
-            Statement stmt = conn.createStatement();
-            ResultSet re = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-            if (re.next()) {
-                String cnombre=re.getString(4);
-                segrest= re.getInt(7);
-                cant_op = re.getInt(8);
-                ResultSet rs = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");               
-                if (rs.next()) {
-                    cap_op = rs.getInt("c_capacidad");
-                    resultado = cant_op;
-                    for (int tiempo = 1; tiempo <= segundos; tiempo++) {
-                        resultado = resultado - cap_op;
-                        segrest=segrest-1;
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='"+resultado+"'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                        if (resultado <= 0) {
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='Finalizado'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                            tiempo=tiempo+5;
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest=0 WHERE t_estado='Finalizado' AND t_segundos_rest>=0 ORDER BY t_orden ASC LIMIT 1");
-                            if (tiempo<=segundos){
-                                ResultSet rx = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                                if (rx.next()) {
-                                    stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                                    tiempo=tiempo+5;
-                                    ResultSet rc = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");
-                                    if (rc.next()){
-                                        int cola = rc.getInt("c_cant_trabajos_cola");
-                                        cola = cola - 1;
-                                        stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='"+cola+"'WHERE c_nombre_centro='"+cnombre+"'");
-                                        ResultSet ry = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                                        if (ry.next()) {
-                                            cant_op = ry.getInt("t_cant_operaciones");
-                                            ResultSet ra = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");
-                                            if (ra.next()) {
-                                                cap_op = ra.getInt("c_capacidad");
-                                                resultado=cant_op;
-                                            }
-                                        }
-                                    }else{
-                                        tiempo=tiempo+5;
-                                    }
-                                    continue;
-                                }
-                            }
-                        } else {
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='"+segrest+"' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                        }     
-                    }
-                    JOptionPane.showMessageDialog(this, "Simulación realizada con éxito", "Información", 1);
-                }
-                conn.close();
-            } else {
-                ResultSet rs = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                if (rs.next()) {
-                    stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                    ResultSet ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso'ORDER BY t_orden ASC LIMIT 1");
-                    if (ro.next()) {
-                        String cnombre=ro.getString(4);
-                        segrest= ro.getInt(7);
-                        cant_op = ro.getInt("t_cant_operaciones");
-                        ResultSet rc = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'"); 
-                        if (rc.next()) {
-                            int cola = rc.getInt("c_cant_trabajos_cola");
-                            cola = cola - 1;
-                            cap_op = rc.getInt("c_capacidad");
-                            resultado = cant_op;
-                            stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='"+cola+"'WHERE c_nombre_centro='"+cnombre+"'");
-                            for (int tiempo = 1; tiempo <= segundos; tiempo++) {
-                                resultado = resultado - cap_op;
-                                segrest=segrest-1;
-                                stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='"+resultado+"'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                                if (resultado <= 0) {
-                                    stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='Finalizado' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                                    tiempo=tiempo+5;
-                                    stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest=0 WHERE t_estado='Finalizado' AND t_segundos_rest>=0 ORDER BY t_orden ASC LIMIT 1");
-                                    if (tiempo<=segundos){
-                                        ResultSet rx = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                                        if (rx.next()) {
-                                            stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
-                                            tiempo=tiempo+5;
-                                            ResultSet rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");
-                                            if (rj.next()){
-                                                ResultSet ry = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                                                if (ry.next()) {
-                                                    cant_op = ry.getInt("t_cant_operaciones");
-                                                    ResultSet ra = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");
-                                                        if (ra.next()) {
-                                                        cap_op = ra.getInt("c_capacidad");
-                                                        resultado=cant_op;
-                                                    }
+            try (Statement stmt = conn.createStatement()) {
+                re = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                if (re.next()) {
+                    String cnombre = re.getString(4);
+                    segrest = re.getInt(7);
+                    cant_op = re.getInt(8);
+                    rs = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                    if (rs.next()) {
+                        cap_op = rs.getInt("c_capacidad");
+                        resultado = cant_op;
+                        for (int tiempo = 1; tiempo <= segundos; tiempo++) {
+                            resultado = resultado - cap_op;
+                            segrest = segrest - 1;
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + resultado + "'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                            if (resultado <= 0) {
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='Finalizado'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                tiempo = tiempo + 5;
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest=0 WHERE t_estado='Finalizado' AND t_segundos_rest>=0 ORDER BY t_orden ASC LIMIT 1");
+                                if (tiempo <= segundos) {
+                                    rx = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                                    if (rx.next()) {
+                                        stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                                        tiempo = tiempo + 5;
+                                        rc = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                                        if (rc.next()) {
+                                            int cola = rc.getInt("c_cant_trabajos_cola");
+                                            cola = cola - 1;
+                                            stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='" + cnombre + "'");
+                                            ry = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                            if (ry.next()) {
+                                                cant_op = ry.getInt("t_cant_operaciones");
+                                                ra = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                                                if (ra.next()) {
+                                                    cap_op = ra.getInt("c_capacidad");
+                                                    resultado = cant_op;
                                                 }
                                             }
-                                            else{
-                                                tiempo=tiempo+5;
-                                            }
-                                            continue;
+                                        } else {
+                                            tiempo = tiempo + 5;
                                         }
                                     }
-                                } else {
-                                    stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='"+segrest+"' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
-                                }  
-                            } 
-                            JOptionPane.showMessageDialog(this, "Simulación realizada con éxito", "Información", 1);
+                                }
+                            } else {
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                            }
                         }
+                        JOptionPane.showMessageDialog(this, "Simulación realizada con éxito", "Información", 1);
                     }
                     conn.close();
                 } else {
-                    JOptionPane.showMessageDialog(this, "No existen trabajos por simular", "AVISO!", 0);
+                    rs = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                    if (rs.next()) {
+                        stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                        ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso'ORDER BY t_orden ASC LIMIT 1");
+                        if (ro.next()) {
+                            String cnombre = ro.getString(4);
+                            segrest = ro.getInt(7);
+                            cant_op = ro.getInt("t_cant_operaciones");
+                            rc = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                            if (rc.next()) {
+                                int cola = rc.getInt("c_cant_trabajos_cola");
+                                cola = cola - 1;
+                                cap_op = rc.getInt("c_capacidad");
+                                resultado = cant_op;
+                                stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='" + cnombre + "'");
+                                for (int tiempo = 1; tiempo <= segundos; tiempo++) {
+                                    resultado = resultado - cap_op;
+                                    segrest = segrest - 1;
+                                    stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + resultado + "'WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                    if (resultado <= 0) {
+                                        stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='Finalizado' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                        tiempo = tiempo + 5;
+                                        stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest=0 WHERE t_estado='Finalizado' AND t_segundos_rest>=0 ORDER BY t_orden ASC LIMIT 1");
+                                        if (tiempo <= segundos) {
+                                            rx = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                                            if (rx.next()) {
+                                                stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En proceso' WHERE t_estado='En cola' ORDER BY t_orden ASC LIMIT 1");
+                                                tiempo = tiempo + 5;
+                                                rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                                                if (rj.next()) {
+                                                    ry = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                                    if (ry.next()) {
+                                                        cant_op = ry.getInt("t_cant_operaciones");
+                                                        ra = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                                                        if (ra.next()) {
+                                                            cap_op = ra.getInt("c_capacidad");
+                                                            resultado = cant_op;
+                                                        }
+                                                    }
+                                                } else {
+                                                    tiempo = tiempo + 5;
+                                                }
+                                            }
+                                        }
+                                    } else {
+                                        stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_estado='En proceso' ORDER BY t_orden ASC LIMIT 1");
+                                    }
+                                }
+                                JOptionPane.showMessageDialog(this, "Simulación realizada con éxito", "Información", 1);
+                            }
+                        }
+                        conn.close();
+                    } else {
+                        JOptionPane.showMessageDialog(this, "No existen trabajos por simular", "AVISO!", 0);
+                    }
+                    conn.close();
                 }
-                conn.close();
+            } finally {
+                if (rs != null) rs.close();
+                if (re != null) re.close();
+                if (rx != null) rx.close();
+                if (ry != null) ry.close();
+                if (rc != null) rc.close();
+                if (ro != null) ro.close();
+                if (ra != null) ra.close();
+                if (rj != null) rj.close();
             }
 
         } catch (Exception e) {
@@ -247,57 +303,8 @@ public class Simulacion extends javax.swing.JFrame {
         }
         this.setVisible(false);
     }
-    
+
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Simulacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Simulacion().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    // End of variables declaration//GEN-END:variables
 }

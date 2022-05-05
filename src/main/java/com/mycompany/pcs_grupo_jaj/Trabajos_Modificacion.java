@@ -5,25 +5,76 @@
  */
 package com.mycompany.pcs_grupo_jaj;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 
 /**
  * Clase que gestiona la ventana para modificar trabajos
+ *
  * @author A Miralles, J Munoz, J Pereiro
  * @version 1.0
  */
 public class Trabajos_Modificacion extends javax.swing.JFrame {
-    Connection conn = null;
-
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JTextField jTextField5;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private Connection conn = null;
     /**
      * Constructor Trabajos_Modificacion
      */
     public Trabajos_Modificacion() {
         initComponents();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Trabajos_Modificacion().setVisible(true);
+            }
+        });
     }
 
     /**
@@ -96,58 +147,58 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(111, 111, 111)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(111, 111, 111)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addGap(10, 10, 10)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 10, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField5)))
-                .addContainerGap())
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addContainerGap()
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                        .addGroup(layout.createSequentialGroup()
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                        .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 153, Short.MAX_VALUE))
+                                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                                                .addGap(10, 10, 10)
+                                                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(layout.createSequentialGroup()
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                                .addGap(0, 10, Short.MAX_VALUE))))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(29, 29, 29)
+                                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField5)))
+                                .addContainerGap())
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(35, 35, 35)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -161,89 +212,95 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
         String nombreTrabajo;
         int cantidadOperaciones;
         String usuario;
-                
+
         // Capturamos los datos de Entrada
         nombreTrabajo = this.jTextField1.getText();
         cantidadOperaciones = Integer.parseInt(this.jTextField2.getText());
         usuario = this.jTextField5.getText();
-        
+
         modificarTrabajo(nombreTrabajo, cantidadOperaciones, usuario);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * Metodo para Modificar Trabajo
-     * @param nombreTrabajo Nombre del Trabajo a Modificar
+     *
+     * @param nombreTrabajo       Nombre del Trabajo a Modificar
      * @param cantidadOperaciones Cantidad de Operaciones
-     * @param usuario Usuario que invoca la operación
+     * @param usuario             Usuario que invoca la operación
      */
-    private void modificarTrabajo(String nombreTrabajo, int cantidadOperaciones, String usuario){
-        try //modificar el trabajo de la BBDD
-        {
-            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb","admin","cencentros1");;  
-            Statement stmt=conn.createStatement();         
-            ResultSet rs =stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_tipo_usuario='Administrador' AND u_usuario='"+usuario+"'");
-            if (rs.next()){
-                ResultSet rp =stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" +nombreTrabajo+ "' AND t_estado !='Finalizado'");
-                if (rp.next()){
-                    String ncentro=rp.getString(4);
-                    ResultSet rj =stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" +ncentro+ "'");
-                    if (rj.next()){
-                        int c_capacidad=rj.getInt(2);
-                        double segrest=cantidadOperaciones/c_capacidad;
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='"+segrest+"' WHERE t_nombre_trabajo='"+nombreTrabajo+"'");
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                        JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
-                    }else{
-                        ResultSet ro =stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" +nombreTrabajo+ "' AND t_estado ='Sin Asignar'");
-                        if(ro.next()){
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
+    private void modificarTrabajo(String nombreTrabajo, int cantidadOperaciones, String usuario) {
+        ResultSet rs = null, rc = null, rp = null, rj = null, ro = null, rx = null;
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb", "admin", "cencentros1");
+
+            try (Statement stmt = conn.createStatement()) {
+                rs = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_tipo_usuario='Administrador' AND u_usuario='" + usuario + "'");
+                if (rs.next()) {
+                    rp = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" + nombreTrabajo + "' AND t_estado !='Finalizado'");
+                    if (rp.next()) {
+                        String ncentro = rp.getString(4);
+                        rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + ncentro + "'");
+                        if (rj.next()) {
+                            int c_capacidad = rj.getInt(2);
+                            double segrest = cantidadOperaciones / c_capacidad;
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
                             JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
+                        } else {
+                            ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" + nombreTrabajo + "' AND t_estado ='Sin Asignar'");
+                            if (ro.next()) {
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                                JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
+                            }
                         }
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado, puede que ya esté finalizado", "AVISO!", 0);
                     }
                 }
-                else{
-                    JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado, puede que ya esté finalizado", "AVISO!", 0);
-                }
-            }
-            ResultSet rx =stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='"+usuario+"'AND u_tipo_usuario='Usuario'");
-            if (rx.next()){
-                ResultSet rc =stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" +nombreTrabajo+ "'AND t_usuario='"+usuario+"' AND t_estado !='Finalizado'");
-                if (rc.next()){
-                    String ncentro=rc.getString(4);
-                    ResultSet rj =stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" +ncentro+ "'");
-                    if (rj.next()){
-                        int c_capacidad=rj.getInt(2);
-                        float segrest=cantidadOperaciones/c_capacidad;
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='"+segrest+"' WHERE t_nombre_trabajo='"+nombreTrabajo+"'");
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                        JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
-                    }else{
-                        ResultSet ro =stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" +nombreTrabajo+ "' AND t_estado ='Sin Asignar'");
-                        if(ro.next()){
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
-                            stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" +cantidadOperaciones+ "'WHERE t_nombre_trabajo='" +nombreTrabajo+ "'");
+                rx = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Usuario'");
+                if (rx.next()) {
+                    rc = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" + nombreTrabajo + "'AND t_usuario='" + usuario + "' AND t_estado !='Finalizado'");
+                    if (rc.next()) {
+                        String ncentro = rc.getString(4);
+                        rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + ncentro + "'");
+                        if (rj.next()) {
+                            int c_capacidad = rj.getInt(2);
+                            float segrest = cantidadOperaciones / c_capacidad;
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
                             JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
+                        } else {
+                            ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_nombre_trabajo='" + nombreTrabajo + "' AND t_estado ='Sin Asignar'");
+                            if (ro.next()) {
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                                stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
+                                JOptionPane.showMessageDialog(this, "El Trabajo ha sido modificado con éxito", "Información", 1);
+                            }
                         }
+                    } else {
+                        JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado, puede que ya esté finalizado", "AVISO!", 0);
                     }
-                }else{
-                    JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado, puede que ya esté finalizado", "AVISO!", 0);
-                }            
+                }
+            } finally {
+                if (rs != null) rs.close();
+                if (rc != null) rs.close();
+                if (rp != null) rs.close();
+                if (rj != null) rs.close();
+                if (ro != null) rs.close();
+                if (rx != null) rs.close();
             }
-            
             conn.close();
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
             JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado", "AVISO!", 0);
         }
-   
+
         this.setVisible(false);
     }
-    
+
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -251,57 +308,4 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Modificacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Trabajos_Modificacion().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    public static javax.swing.JTextField jTextField5;
-    // End of variables declaration//GEN-END:variables
 }

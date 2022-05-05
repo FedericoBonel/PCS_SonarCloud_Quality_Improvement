@@ -5,26 +5,84 @@
  */
 package com.mycompany.pcs_grupo_jaj;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 
 /**
  * Clase que gestiona la ventana de eliminar trabajos
+ *
  * @author A Miralles, J Munoz, J Pereiro
  * @version 1.0
  */
 public class Trabajos_Baja extends javax.swing.JFrame {
 
-    Connection conn = null;
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JTextField jTextField1;
+    public static javax.swing.JTextField jTextField5;
+    private Connection conn = null;
 
     /**
      * Constructor Trabajos_Baja
      */
     public Trabajos_Baja() {
         initComponents();
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Trabajos_Baja().setVisible(true);
+            }
+        });
     }
 
     /**
@@ -83,44 +141,44 @@ public class Trabajos_Baja extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 10, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField5)))
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(113, 113, 113)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(10, 10, 10)
+                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(0, 10, Short.MAX_VALUE))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jTextField5)))
+                                .addContainerGap())
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(113, 113, 113)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(26, 26, 26)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(32, 32, 32)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -136,84 +194,96 @@ public class Trabajos_Baja extends javax.swing.JFrame {
 
         // Capturamos los datos de Entrada
         nombreTrabajo = this.jTextField1.getText();
-        usuario = this.jTextField5.getText();
+        usuario = jTextField5.getText();
 
         eliminarTrabajo(nombreTrabajo, usuario);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * Metodo para eliminar un trabajo de la base de datos
+     *
      * @param nombreTrabajo identificador del trabajo
-     * @param usuario usuario que invoca la petición de eliminación
+     * @param usuario       usuario que invoca la petición de eliminación
      */
-    private void eliminarTrabajo(String nombreTrabajo, String usuario){
-        try //eliminar el trabajo de la BBDD
-        {
+    private void eliminarTrabajo(String nombreTrabajo, String usuario) {
+        ResultSet rx = null, ru = null, rj = null, ra = null, rc = null, rp = null, ry = null, rm = null, ro = null;
+        try {
             conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb", "admin", "cencentros1");
-            Statement stmt = conn.createStatement();
-            ResultSet rx = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Administrador'"); 
-            if (rx.next()) {
-                ResultSet ru = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "' AND t_estado='En cola'");
-                if (ru.next()){
-                    String xnombre = rx.getString(4);
-                    stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
-                    JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
-                    ResultSet rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + xnombre + "'");              
+            try (Statement stmt = conn.createStatement()) {
+                rx = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Administrador'");
+                if (rx.next()) {
+                    ru = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "' AND t_estado='En cola'");
+                    if (ru.next()) {
+                        String xnombre = rx.getString(4);
+                        stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
+                        JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
+                        rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + xnombre + "'");
                         if (rj.next()) {
                             int cola = rj.getInt(5);
                             cola = cola - 1;
                             stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='" + xnombre + "'");
                         }
-                }else{
-                    ResultSet ra = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "'");
-                    if (ra.next()){
-                        stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
-                        JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
-                    }
-                }
-            }
-            ResultSet rc = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Administrador Centro'");
-            if (rc.next()) {
-                ResultSet rp = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' AND t_nombre_trabajo='" + nombreTrabajo + "'");               
-                if (rp.next()) {
-                    String cnombre = rp.getString(4);
-                    ResultSet ry = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
-                    if (ry.next()) {
-                        stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
-                        JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
-                        ResultSet rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+cnombre+"'");
-                        if (rj.next()) {
-                            int cola = rj.getInt(5);
-                            cola = cola - 1;
-                            stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='"+cnombre+"'");
+                    } else {
+                        ra = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "'");
+                        if (ra.next()) {
+                            stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
+                            JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
                         }
                     }
                 }
-            }
-            ResultSet rm = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Usuario'");
-            if (rm.next()) {
-                ResultSet rp = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "' AND t_estado='En cola'");       
-                if (rp.next()) {
-                    String jnombre = rp.getString(4);
-                    stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
-                    JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
-                    ResultSet rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='"+jnombre+"'");
-                    if (rj.next()) {
-                        int cola = rj.getInt(5);
-                        cola = cola - 1;
-                        stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='"+jnombre+"'");
-                    }
-                }else{
-                    ResultSet ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "'");
-                    if (ro.next()){
-                        stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
-                        JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
+                rc = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Administrador Centro'");
+                if (rc.next()) {
+                    rp = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='En cola' AND t_nombre_trabajo='" + nombreTrabajo + "'");
+                    if (rp.next()) {
+                        String cnombre = rp.getString(4);
+                        ry = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                        if (ry.next()) {
+                            stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
+                            JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
+                            rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + cnombre + "'");
+                            if (rj.next()) {
+                                int cola = rj.getInt(5);
+                                cola = cola - 1;
+                                stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='" + cnombre + "'");
+                            }
+                        }
                     }
                 }
+                rm = stmt.executeQuery("SELECT * FROM usuarios_db WHERE u_usuario='" + usuario + "'AND u_tipo_usuario='Usuario'");
+                if (rm.next()) {
+                    rp = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "' AND t_estado='En cola'");
+                    if (rp.next()) {
+                        String jnombre = rp.getString(4);
+                        stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
+                        JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
+                        rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + jnombre + "'");
+                        if (rj.next()) {
+                            int cola = rj.getInt(5);
+                            cola = cola - 1;
+                            stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + cola + "'WHERE c_nombre_centro='" + jnombre + "'");
+                        }
+                    } else {
+                        ro = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_usuario='" + usuario + "'");
+                        if (ro.next()) {
+                            stmt.executeUpdate("DELETE from trabajos_centros where t_nombre_trabajo='" + nombreTrabajo + "'");
+                            JOptionPane.showMessageDialog(this, "El Trabajo se ha sido eliminado", "Información", 1);
+                        }
+                    }
+                }
+            } finally {
+                if (rx != null) rx.close();
+                if (ru != null) ru.close();
+                if (rj != null) rj.close();
+                if (ra != null) ra.close();
+                if (rc != null) rc.close();
+                if (rp != null) rp.close();
+                if (ry != null) ry.close();
+                if (rm != null) rm.close();
+                if (ro != null) ro.close();
             }
             conn.close();
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
             JOptionPane.showMessageDialog(this, "Trabajo o usuario Incorrecto", "AVISO!", 0);
         }
         this.setVisible(false);
@@ -222,63 +292,4 @@ public class Trabajos_Baja extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Trabajos_Baja.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Trabajos_Baja().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jTextField1;
-    public static javax.swing.JTextField jTextField5;
-    // End of variables declaration//GEN-END:variables
 }

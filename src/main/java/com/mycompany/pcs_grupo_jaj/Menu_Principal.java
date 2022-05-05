@@ -5,26 +5,35 @@
  */
 package com.mycompany.pcs_grupo_jaj;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import javax.swing.JOptionPane;
 
 /**
  * Clase que gestiona la ventana de menú principal
+ *
  * @author A Miralles, J Munoz, J Pereiro
  * @version 1.0
  */
 public class Menu_Principal extends javax.swing.JFrame {
-    Connection conn = null;
-    
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Choice choice1;
+    private java.awt.Choice choice2;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    protected static javax.swing.JTextField jTextField1;
+    private Connection conn = null;
+
     /**
      * Constructor Menu_Principal
      */
     protected Menu_Principal() {
         initComponents();
-        
+
         choice1.add("Usuarios");
         choice1.add("Centros");
         choice1.add("Trabajos");
@@ -32,14 +41,51 @@ public class Menu_Principal extends javax.swing.JFrame {
         choice1.add("Información");
         choice1.add("Simulación");
         choice1.add("Salir");
-        
+
         add(choice1);
-        
+
         choice2.add("Alta");
         choice2.add("Baja");
         choice2.add("Modificación");
-        
+
         add(choice2);
+    }
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Menu_Principal().setVisible(true);
+            }
+
+        });
+
     }
 
     /**
@@ -97,52 +143,52 @@ public class Menu_Principal extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(choice1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
-                            .addComponent(choice2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(114, 114, 114)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jLabel5)
-                    .addContainerGap()))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField1))
+                        .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(76, 76, 76)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addComponent(choice1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
+                                                        .addComponent(choice2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(114, 114, 114)
+                                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addContainerGap()
+                                        .addComponent(jLabel5)
+                                        .addContainerGap()))
         );
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82)
-                .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(choice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(66, 66, 66)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(241, Short.MAX_VALUE)))
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(19, 19, 19)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(82, 82, 82)
+                                .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(choice2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(27, 27, 27)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addContainerGap())))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                        .addGap(66, 66, 66)
+                                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addContainerGap(241, Short.MAX_VALUE)))
         );
 
         pack();
@@ -153,24 +199,19 @@ public class Menu_Principal extends javax.swing.JFrame {
      * Metodo para modificar el segundo desplegable cuando se cambia el primero
      */
     private void choice1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_choice1ItemStateChanged
-        // TODO add your handling code here:
-        //System.out.println("click");
-        String selectedChoice;
-                 
-        selectedChoice = choice1.getSelectedItem();
-           
-        
+        String selectedChoice = choice1.getSelectedItem();
+
         if (selectedChoice.equals("Usuarios") || selectedChoice.equals("Centros") || selectedChoice.equals("Trabajos")) {
             choice2.removeAll();
-            
+
             choice2.add("Alta");
             choice2.add("Baja");
             choice2.add("Modificación");
-            
+
             add(choice2);
         } else {
             choice2.removeAll();
-            
+
             choice2.add("--------");
 
             add(choice2);
@@ -184,122 +225,122 @@ public class Menu_Principal extends javax.swing.JFrame {
         // Variables para capturar la selección del usuario
         String c1;
         String c2;
-        
+
         // Variable para capturar el user ID
         String usuario;
-        
+
         usuario = jTextField1.getText();
-        
+
         // Variable para comprobar si el usuario tiene acceso o no
         int acceso;
-        
+
         // Variable para comprobar si los trabajos se han asignado correctamente
         //boolean resultadoAsignarTrabajos;
-        
+
         c1 = choice1.getSelectedItem();
         c2 = choice2.getSelectedItem();
-        
-        if (c1.equals("Usuarios") && c2.equals("Alta")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1){
+
+        if (c1.equals("Usuarios") && c2.equals("Alta")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
                 new Usuarios_Alta().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Usuarios") && c2.equals("Baja")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1){
+        } else if (c1.equals("Usuarios") && c2.equals("Baja")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
                 new Usuarios_Baja().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
-            }            
-        } else if (c1.equals("Usuarios") && c2.equals("Modificación")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1){
+            }
+        } else if (c1.equals("Usuarios") && c2.equals("Modificación")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
                 new Usuarios_Modificacion().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Centros") && c2.equals("Alta")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 ){
+        } else if (c1.equals("Centros") && c2.equals("Alta")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
                 new Centros_Alta().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Centros") && c2.equals("Modificación")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 2){
+        } else if (c1.equals("Centros") && c2.equals("Modificación")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 2) {
                 new Centros_Modificacion().setVisible(true);
                 Centros_Modificacion.jTextField5.setText(usuario);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Centros") && c2.equals("Baja")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1){
+        } else if (c1.equals("Centros") && c2.equals("Baja")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
                 new Centros_Baja().setVisible(true);
                 Centros_Baja.jTextField5.setText(usuario);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Trabajos") && c2.equals("Alta")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 3){
+        } else if (c1.equals("Trabajos") && c2.equals("Alta")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 3) {
                 new Trabajos_Alta().setVisible(true);
                 Trabajos_Alta.jTextField5.setText(usuario);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Trabajos") && c2.equals("Modificación")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 3){
+        } else if (c1.equals("Trabajos") && c2.equals("Modificación")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 3) {
                 new Trabajos_Modificacion().setVisible(true);
                 Trabajos_Modificacion.jTextField5.setText(usuario);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Trabajos") && c2.equals("Baja")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 2 || acceso == 3){
+        } else if (c1.equals("Trabajos") && c2.equals("Baja")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Trabajos_Baja().setVisible(true);
                 Trabajos_Baja.jTextField5.setText(usuario);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Asignar Trabajos")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1){
-                asignarTrabajos();                                
+        } else if (c1.equals("Asignar Trabajos")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1) {
+                asignarTrabajos();
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        } else if (c1.equals("Información")){
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 2 || acceso == 3){
+        } else if (c1.equals("Información")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Informacion().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
-        }else if (c1.equals("Simulación")) {
-            acceso = comprobarPrivilegios(c1,c2,usuario);
-            
-            if (acceso == 1 || acceso == 2 || acceso == 3){
+        } else if (c1.equals("Simulación")) {
+            acceso = comprobarPrivilegios(c1, c2, usuario);
+
+            if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Simulacion().setVisible(true);
             } else {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
-            }    
+            }
         } else if (c1.equals("Salir")) {
             this.setVisible(false);
         }
@@ -307,133 +348,88 @@ public class Menu_Principal extends javax.swing.JFrame {
 
     /**
      * Metodo para comprobar si el usuario tiene privilegios para realizar la acción.
+     *
      * @param funcionalidad Funcionalidad que se desea ejecutar
-     * @param accion Accion de la funcionalidad que se desea ejecutar
-     * @param usuario Nombre de Usuario
+     * @param accion        Accion de la funcionalidad que se desea ejecutar
+     * @param usuario       Nombre de Usuario
      * @return Valor booleano que será "true" en caso de que el usuario tenga privilegios y "false" en caso negativo.
      */
-    private int comprobarPrivilegios(String funcionalidad, String accion, String usuario){
-        
+    private int comprobarPrivilegios(String funcionalidad, String accion, String usuario) {
         usuario = jTextField1.getText();
         int rt = 0;
- 
-        try //comprobar las credenciales de usuario
-        {
-            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb","admin","cencentros1");  
-            Statement stmt=conn.createStatement();         
-            ResultSet rs = stmt.executeQuery("SELECT u_tipo_usuario FROM usuarios_db where u_usuario='"+usuario+"'");
-            while (rs.next()){
-                String tipo=rs.getString("u_tipo_usuario");
-                if (null != tipo)switch (tipo) {
-                    case "Administrador":
-                        rt=1;
-                        break;
-                    case "Administrador Centro":
-                        rt=2;
-                        break;
-                    case "Usuario":
-                        rt=3;
-                        break;
-                    default:
-                        break;
+
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb", "admin", "cencentros1");
+            try (Statement stmt = conn.createStatement();
+                 ResultSet rs = stmt.executeQuery("SELECT u_tipo_usuario FROM usuarios_db where u_usuario='" + usuario + "'")) {
+                while (rs.next()) {
+                    String tipo = rs.getString("u_tipo_usuario");
+                    if (null != tipo) switch (tipo) {
+                        case "Administrador":
+                            rt = 1;
+                            break;
+                        case "Administrador Centro":
+                            rt = 2;
+                            break;
+                        case "Usuario":
+                            rt = 3;
+                            break;
+                        default:
+                            break;
+                    }
                 }
-            }               
+            }
             conn.close();
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
         }
         return rt;
     }
-    
+
     /**
      * Metodo para asignar trabajos
      */
-    private void asignarTrabajos(){
-        try 
-        {
-            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb","admin","cencentros1");  
-            Statement stmt=conn.createStatement();         
-            ResultSet rs = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='Sin Asignar' ORDER BY t_orden ASC LIMIT 1");
-            if (rs.next()){
-                String tnombre= rs.getString(1);
-                int tcantidad = rs.getInt(2);
-                ResultSet ri = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_estado='Libre' ORDER BY c_capacidad ASC LIMIT 1");
-                if (ri.next()){
-                    stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En cola' WHERE t_estado='Sin Asignar' ORDER BY t_orden ASC LIMIT 1");
-                    ResultSet rk = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_estado='Libre' ORDER BY c_cola_de_trabajo DESC LIMIT 1");
-                    if (rk.next()){
-                        int ccapacidad = rk.getInt(2);
-                        int ccola = rk.getInt("c_cola_de_trabajo");
-                        int ctrabajos=rk.getInt("c_cant_trabajos_cola");
-                        String centro=rk.getString("c_nombre_centro");
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_centro_asignado='"+centro+"' WHERE t_centro_asignado='vacio' ORDER BY t_orden ASC LIMIT 1");       
-                        double segrest=tcantidad/ccapacidad;
-                        stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='"+segrest+"' WHERE t_nombre_trabajo='"+tnombre+"'");
-                        ctrabajos=ctrabajos+1;
-                        stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='"+ctrabajos+"' WHERE c_nombre_centro='"+centro+"'");
-                        if (ctrabajos>=ccola){
-                            stmt.executeUpdate("UPDATE centros_computacion SET c_estado='Ocupado'WHERE c_nombre_centro='"+centro+"'");
+    private void asignarTrabajos() {
+        ResultSet rs = null, ri = null, rk = null;
+        try {
+            conn = DriverManager.getConnection("jdbc:mysql://centros.ckcropo2r2me.us-east-1.rds.amazonaws.com:3306/centrosdb", "admin", "cencentros1");
+            try (Statement stmt = conn.createStatement()) {
+                rs = stmt.executeQuery("SELECT * FROM trabajos_centros WHERE t_estado='Sin Asignar' ORDER BY t_orden ASC LIMIT 1");
+                if (rs.next()) {
+                    String tnombre = rs.getString(1);
+                    int tcantidad = rs.getInt(2);
+                    ri = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_estado='Libre' ORDER BY c_capacidad ASC LIMIT 1");
+                    if (ri.next()) {
+                        stmt.executeUpdate("UPDATE trabajos_centros SET t_estado='En cola' WHERE t_estado='Sin Asignar' ORDER BY t_orden ASC LIMIT 1");
+                        rk = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_estado='Libre' ORDER BY c_cola_de_trabajo DESC LIMIT 1");
+                        if (rk.next()) {
+                            int ccapacidad = rk.getInt(2);
+                            int ccola = rk.getInt("c_cola_de_trabajo");
+                            int ctrabajos = rk.getInt("c_cant_trabajos_cola");
+                            String centro = rk.getString("c_nombre_centro");
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_centro_asignado='" + centro + "' WHERE t_centro_asignado='vacio' ORDER BY t_orden ASC LIMIT 1");
+                            double segrest = tcantidad / ccapacidad;
+                            stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_nombre_trabajo='" + tnombre + "'");
+                            ctrabajos = ctrabajos + 1;
+                            stmt.executeUpdate("UPDATE centros_computacion SET c_cant_trabajos_cola='" + ctrabajos + "' WHERE c_nombre_centro='" + centro + "'");
+                            if (ctrabajos >= ccola) {
+                                stmt.executeUpdate("UPDATE centros_computacion SET c_estado='Ocupado'WHERE c_nombre_centro='" + centro + "'");
+                            }
                         }
                     }
+                    JOptionPane.showMessageDialog(this, "Asignación realizada con éxito", "Información", 1);
                 }
-                JOptionPane.showMessageDialog(this, "Asignación realizada con éxito", "Información", 1);
-                conn.close();
+            } finally {
+                if (rs != null) rs.close();
+                if (ri != null) ri.close();
+                if (rk != null) rk.close();
             }
-        }
-        catch(Exception e)
-        {
-            System.out.println(e);
+            conn.close();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
             JOptionPane.showMessageDialog(this, "La asignación no ha podido ser realizada", "AVISO!", 0);
         }
     }
-    
-    /**
-     * @param args the command line arguments
-     */
-    protected static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu_Principal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-              
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Menu_Principal().setVisible(true);
-            }
-            
-        });
-           
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Choice choice1;
-    private java.awt.Choice choice2;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    protected static javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
-    
+
 }
