@@ -17,10 +17,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>13</maven.compiler.source>
 		<maven.compiler.target>13</maven.compiler.target>
-		<sonar.organization>alfonsomiralles</sonar.organization>
-  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
-  		<sonar.projectKey>alfonsomiralles_PCS_SonarCloud</sonar.projectKey>
-  		<sonar.login>3477605fc3a823b62f3476619164554416e8fb7f</sonar.login>
+		<sonar.organization>fjbtz</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 	<build>
 		<plugins>

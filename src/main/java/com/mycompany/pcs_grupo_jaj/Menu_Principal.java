@@ -227,9 +227,7 @@ public class Menu_Principal extends javax.swing.JFrame {
         String c2;
 
         // Variable para capturar el user ID
-        String usuario;
-
-        usuario = jTextField1.getText();
+        String usuario = jTextField1.getText();
 
         // Variable para comprobar si el usuario tiene acceso o no
         int acceso;
@@ -241,7 +239,7 @@ public class Menu_Principal extends javax.swing.JFrame {
         c2 = choice2.getSelectedItem();
 
         if (c1.equals("Usuarios") && c2.equals("Alta")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 new Usuarios_Alta().setVisible(true);
@@ -249,7 +247,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Usuarios") && c2.equals("Baja")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 new Usuarios_Baja().setVisible(true);
@@ -257,7 +255,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Usuarios") && c2.equals("Modificación")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 new Usuarios_Modificacion().setVisible(true);
@@ -265,7 +263,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Centros") && c2.equals("Alta")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 new Centros_Alta().setVisible(true);
@@ -273,7 +271,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Centros") && c2.equals("Modificación")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 2) {
                 new Centros_Modificacion().setVisible(true);
@@ -282,7 +280,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Centros") && c2.equals("Baja")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 new Centros_Baja().setVisible(true);
@@ -291,7 +289,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Trabajos") && c2.equals("Alta")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 3) {
                 new Trabajos_Alta().setVisible(true);
@@ -300,7 +298,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Trabajos") && c2.equals("Modificación")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 3) {
                 new Trabajos_Modificacion().setVisible(true);
@@ -309,7 +307,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Trabajos") && c2.equals("Baja")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Trabajos_Baja().setVisible(true);
@@ -318,7 +316,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Asignar Trabajos")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1) {
                 asignarTrabajos();
@@ -326,7 +324,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Información")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Informacion().setVisible(true);
@@ -334,7 +332,7 @@ public class Menu_Principal extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "El usuario no tiene privilegios para ejecutar esta acción", "AVISO!", 0);
             }
         } else if (c1.equals("Simulación")) {
-            acceso = comprobarPrivilegios(c1, c2, usuario);
+            acceso = comprobarPrivilegios(usuario);
 
             if (acceso == 1 || acceso == 2 || acceso == 3) {
                 new Simulacion().setVisible(true);
@@ -349,13 +347,10 @@ public class Menu_Principal extends javax.swing.JFrame {
     /**
      * Metodo para comprobar si el usuario tiene privilegios para realizar la acción.
      *
-     * @param funcionalidad Funcionalidad que se desea ejecutar
-     * @param accion        Accion de la funcionalidad que se desea ejecutar
      * @param usuario       Nombre de Usuario
      * @return Valor booleano que será "true" en caso de que el usuario tenga privilegios y "false" en caso negativo.
      */
-    private int comprobarPrivilegios(String funcionalidad, String accion, String usuario) {
-        usuario = jTextField1.getText();
+    private int comprobarPrivilegios(String usuario) {
         int rt = 0;
 
         try {
