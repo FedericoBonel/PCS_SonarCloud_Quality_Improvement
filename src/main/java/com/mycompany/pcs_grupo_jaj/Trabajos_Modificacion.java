@@ -241,7 +241,7 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
                         String ncentro = rp.getString(4);
                         rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + ncentro + "'");
                         if (rj.next()) {
-                            int c_capacidad = rj.getInt(2);
+                            double c_capacidad = rj.getDouble(2);
                             double segrest = cantidadOperaciones / c_capacidad;
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
@@ -266,8 +266,8 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
                         String ncentro = rc.getString(4);
                         rj = stmt.executeQuery("SELECT * FROM centros_computacion WHERE c_nombre_centro='" + ncentro + "'");
                         if (rj.next()) {
-                            int c_capacidad = rj.getInt(2);
-                            float segrest = cantidadOperaciones / c_capacidad;
+                            double c_capacidad = rj.getDouble(2);
+                            double segrest = cantidadOperaciones / c_capacidad;
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_segundos_rest='" + segrest + "' WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_cant_operaciones='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
                             stmt.executeUpdate("UPDATE trabajos_centros SET t_op_rest='" + cantidadOperaciones + "'WHERE t_nombre_trabajo='" + nombreTrabajo + "'");
@@ -294,7 +294,7 @@ public class Trabajos_Modificacion extends javax.swing.JFrame {
             }
             conn.close();
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
             JOptionPane.showMessageDialog(this, "El trabajo no ha podido ser modificado", "AVISO!", 0);
         }
 
